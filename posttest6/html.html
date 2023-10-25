@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <!-- <script>
+        alert("just info, nyesel anda lihat web ini!");
+    </script> -->
+    <script>
+        function twitteralert() {
+            alert("uppss.. sowwy.. twitter gw bersifat pribadi hehe");
+        }
+        </script>    
+
+    <script>
+        function ytconfirm(){
+            confirm("sorry guys channel youtube masih belum ada!");
+        }
+    </script>
+
+    <style>
+        /* CSS untuk pop-up */
+        .popup {
+            display: block;
+            position: fixed;
+            top: 0%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+            z-index: 999; /* Menempatkan pop-up di atas elemen lain */
+        }
+    </style>
+
+    <meta charset="utf-8">
+    <title>Personal Website</title>
+    <link rel="stylesheet" type="text/css" href="css.css"/>
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+
+    
+<script src="darkmode.js"></script>
+<script src="darkmode.js"></script>
+
+<link rel="stylesheet" type="text/css" href="darkmode.css">
+</head>
+ 
+<body>
+    <section>
+        <!--- navigation --->
+        <nav>
+            <!--- logo --->
+            <!-- <a href="#" class="logo">Biodata Pribadi</a> -->
+            <!-- <a href="*" class="logo">Pencet</a> -->
+            <button onclick="showPopup()"<a href="#" class="logo">Biodata Pribadi</a> </button>
+            <div id="popup" class="popup">
+                <h2>Maaf masih banyak yang perlu di perbaiki bang</h2>
+                <p>Selamat Datang, Jangan Salah Gunakan Biodata Saya!</p>
+                <button onclick="hidePopup()">Tutup</button>
+            </div>
+            <script>
+                // Fungsi untuk menampilkan pop-up
+                function showPopup() {
+                    document.getElementById("popup").style.display = "block";
+                }
+        
+                // Fungsi untuk menyembunyikan pop-up
+                function hidePopup() {
+                    document.getElementById("popup").style.display = "none";
+                }
+            </script>
+        
+            <!--- menu --->
+            <ul>
+                <li><a href="biodata.html" class="active">Biodata</a></li>
+                <li><a href="tentangsaya.html">tentang saya</a></li>
+                <!-- <li><button class="fa fa-moon" id="darkMode"></button></li>
+                <li><button onclick="myFunction()">Change</button></li> -->
+                <li><button class="fa fa-moon" id="darkMode" onclick="myFunction()"></button></li>
+
+                    
+            </ul>
+        </nav>
+ 
+        <!--- text --->
+        <div class="text-container">
+            <p>Selamat Datang di Halaman Pribadi ku,</p>
+            <p> ARKANANTA</p>
+            <p>Informatic Engineering</p>
+            <p>ingin tahu lebih banyak tentang saya? silahkan klik tombol <br>
+               bioadata di bar, semoga kalian menikmati ceritaku :)</p>
+            <a href="dokumentasi.html"><button class="hire-btn">Dokumentasi</button></a>
+            <!-- <button class="down-cv">Download CV</button> -->
+        </div>
+        <!-- model -->
+        <img alt="model" class="model" src="halaman utama.jpg" width="800" height="600" >
+
+        
+        </body>  
+    </section>
+       
+    <!-- footer -->
+    <footer>
+        <p>Terima kasih sudah mengunjungi web saya, sampai jumpa.</p>
+             
+        <!--paragraph-->
+        <p>Anda juga bisa mengunjungi media sosial saya</p>
+        <!--social-->
+        <div class="social-icons">
+            <a href="https://wa.me/+6285828564243"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100011447314163&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a> 
+            <a href="javascript:void(0);" onclick="twitteralert()"><i class="fab fa-twitter"></i></a>
+            <!-- <a href="alert"><i class="fab fa-twitter"></i></a> -->
+            <a href="https://instagram.com/arkananta_shelby?igshid=NGVhN2U2NjQ0Yg=="><i class="fab fa-instagram"></i></a>
+            <a href="javascript:void(0);" onclick="ytconfirm()"><i class="fab fa-youtube"></i></a>
+            <!-- <a href="#"><i class="fab fa-youtube"></i></a> -->
+        </div>
+           
+        <!--copyright-->
+        <p class="copyright">Copyright @Abdullah Arkananta Rasendrya Hasan</p>
+    </footer>
+ 
+    <!--social-attach-bar-->
+    <div class="social">
+        <a href="https://wa.me/+6285828564243"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100011447314163&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+        <a href="javascript:void(0);" onclick="twitteralert()"><i class="fab fa-twitter"></i></a>
+        <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
+        <a href="https://instagram.com/arkananta_shelby?igshid=NGVhN2U2NjQ0Yg=="><i class="fab fa-instagram"></i></a>
+        <a href="javascript:void(0);" onclick="ytconfirm()"><i class="fab fa-youtube"></i></a>
+        <!-- <a href="#"><i class="fab fa-youtube"></i></a> -->
+    </div>
+    
+<!-- gagal -->
+    <script>
+        const tombolModeGelap = document.getElementById('darkMode');
+        const stylesheetTerang = document.getElementById('stylesheet-terang');
+        const stylesheetGelap = document.getElementById('stylesheet-gelap');
+    
+        tombolModeGelap.addEventListener('click', () => {
+            if (stylesheetGelap.disabled) {
+                stylesheetGelap.disabled = false;
+                stylesheetTerang.disabled = true;
+            } else {
+                stylesheetGelap.disabled = true;
+                stylesheetTerang.disabled = false;
+            }
+        });
+    </script>
+    <!-- <link rel="stylesheet" href="javascript.js">
+    <script src="javascript.js"></script> -->
+    
+</body>
+
+
+</html>
